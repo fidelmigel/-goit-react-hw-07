@@ -1,48 +1,39 @@
-.contactsForm {
+.contactItem {
   font-family: "Montserrat";
-  height: auto;
-  width: 450px;
-  border: 2px solid #00796b;
-  border-radius: 15px;
-  background-color: #ffffff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #000;
+  width: 90%;
+  max-width: 22em;
+  height: 60px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #004d40;
+}
+.contactParagraph {
+  ddisplay: flex;
+  flex-direction: column;
+  font-size: 18px;
+  flex-wrap: wrap;
+  max-width: 160px;
+  color: rgb(253, 255, 222);
 }
 
-.contactsField {
+.contactButton {
+  width: 60px;
+  height: 30px;
+  height: auto;
+  width: 80px;
   display: block;
-  width: calc(100% - 40px);
-  margin: 10px auto;
+  margin: 10px 0;
   padding: 12px;
-  border: 1px solid #b2dfdb;
-  border-radius: 5px;
+  border: 1px solid #478f89;
+  border-radius: 8px;
+  background-color: rgb(253, 255, 222);
   font-size: 16px;
   box-sizing: border-box;
   transition: border-color 0.3s;
-}
-
-.contactsField:focus {
-  border-color: #004d40;
-  outline: none;
-}
-
-.contactsButton {
-  margin: auto;
-  display: flex;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  background-color: #004d40;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.contactsButton:hover {
-  background-color: #00796b;
-}
-
-.contactsError {
-  color: red;
 }
